@@ -6,6 +6,7 @@ import os, sys
 
 inputFile = open(sys.argv[1], "rt")
 outFile = open(sys.argv[2], "wt")
+
 strHeader = sys.argv[3] + "\n"
 
 data = inputFile.read()

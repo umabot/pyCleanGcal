@@ -8,7 +8,7 @@ inputFile = open(sys.argv[1], "rt")
 outFile = open(sys.argv[2], "wt")
 data = inputFile.read()
 
-data = data.replace(', ', '\n')
+data = data.replace(', ', '\n') # to transpose the gcal input just replace each comma for a new line character
 
 outFile.write(data)
 
