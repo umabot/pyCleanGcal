@@ -29,8 +29,9 @@ How to use the python scripts?
 
 - python gcal2csv.py fileName1 fileName2 # split the 1 line file into several lines replacing the ', ' with a '\n'
 - python csv2columns.py filename1 filename2 # find any ' ' and replace for a ',' - it has the problem that a name with more than 2 words will add more columns than FirsdtName and LastName. Further manual editing of the file is needed
-- python csvHeader.py fileName1 fileName2 "FirstName, LastName, email, CampaigID, Status"
 - python cleanEmail.py fileName1 fileName2 # emails are enclosed in <email>, so the > and the < are replaced with null
+- python addCommas.py filename1 fileName2 # if no commas found in a line, it adds str,str,email - str is the first part of the email
 - python csvAddStringLine.py fileName1 fileName2 ",701F0A83FDE68A603A0,Attended"
-
+- python csvAddHeader.py fileName1 fileName2 "FirstName, LastName, email, CampaigID, Status"                                     
+                                                                                                   
 The scripts assume that initial file has a very specific format.
